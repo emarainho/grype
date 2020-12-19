@@ -4,12 +4,12 @@ This repository's purpose is building a docker image for running anchore/grype s
 
 ### build
 ```bash
-docker build -t emarainho/grype -f Dockerfile .
+docker build -t anchore/grype -f Dockerfile .
 ```
 
 ### run
 ```bash
-docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock emarainho/grype busybox:latest
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock anchore/grype busybox:latest
 ```
 
 #### notes
